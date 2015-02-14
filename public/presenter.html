@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <link rel="stylesheet" href="/css/core.css">
+        <link rel="stylesheet" href="http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:400,800,300">
+    </head>
+    <body ng-app="app">
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="page">
+            <div class="page-inner" ng-controller="AdminCtrl">
+                <div class="title">
+                    <h1>Quiz</h1>
+                </div>
+                 <div class="question-container" ng-show="roundState !== '' || roundState === 'playing' || state === 'roundfinished'">
+                    <h2 class="question_number">Question {{currentQuestion}} of {{maxQuestion}}</h2>
+                    <h3>{{question}}</h3>
+                    <ul class="question">
+                        <li ng-repeat="ans in answers">
+                            <div class="answer">{{letters[$index]}} {{ans}}</div>
+                        </li>
+                        <li class="correct-answer" ng-show="roundState == 'roundfinished'"> Correct answer: {{answer}}</li>
+                    </ul>
+                 </div>
+                <div class="scores">
+                    <div class="scores_title">Players</div>
+                    <ul class="scores__player-scores">
+                        <li ng-repeat="user in users | orderBy:'points':true">{{user.name}} ({{ user.points }} points)<span><button ng-click="disqualify(user)" class="btn btn--small" ng-show="state == 'roundfinished'">Disqualify</button></span> <span ng-show="state == 'roundfinished'"><strong>{{user.answer}}</strong></strong></span></li>
+                    </ul>
+                    <div class="scores_footer" ng-show="state == 'newround' && roundState == ''">
+                        <button class="btn" ng-click="startGame();">Start game</button>
+                    </div>
+                    <div class="scores_footer" ng-show="state == 'roundfinished' && currentQuestion !== maxQuestion">
+                        <button class="btn" ng-click="nextRound()">Next Round!</button>
+                    </div>
+                </div>
+                <div class="game">
+                    <div class="intro" >
+                        <span ng-show="roundState == 'countdown'">Game starts in <strong>{{presenterTimer}}</strong>.</span>
+                        <span ng-show="roundState == 'playing'">Round ends in <strong>{{presenterTimer}}</strong>.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/vendor/jquery-1.10.2.js"></script>
+		<script src="/js/vendor/angular.js"></script>
+        <script src="https://cdn.socket.io/socket.io-1.0.4.js"></script>
+		<script src="/app/app.js"></script>
+        <script src="/app/controllers/presenterController.js"></script>
+        <script src="/app/services/socketService.js"></script>
+    </body>
+</html>

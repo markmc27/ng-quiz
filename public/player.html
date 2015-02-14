@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <link rel="stylesheet" href="/css/core.css">
+        <link rel="stylesheet" href="http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:400,800,300">
+    </head>
+    <body ng-app="app">
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="page">
+            <div class="page-inner" ng-controller="GameCtrl">
+                
+                <!-- Join State -->
+                <div class="user" ng-show="state == 'join'">
+                    <input type="text" ng-model="name" placeholder="Enter your name" />
+
+                    <div class="users_footer">
+                        <a href="#new" class="btn" ng-click="joinGame()">Join game</a>
+                    </div>
+                </div>
+                <!-- /Join State -->
+
+                <!-- Game State -->
+                <div class="game" ng-show="state == 'game'">
+                     <ul class="test" ng-hide="currentQuestion == 'null' || roundState !== 'playing'">
+                        <li>Question {{currentQuestion}}</li>
+                        <li>{{question}}</li>
+                        <label class="choice" data-ng-repeat="choice in answers">
+                            <input
+                                name="choice"
+                                type="radio"
+                                value="{{choice}}"
+                                ng-model="$parent.answer" />
+                                    {{letters[$index]}} {{choice}}
+                        </label>
+<!--                        <li ng-repeat="ans in answers">{{ans}}</li>-->
+                    </ul>
+                    <div class="intro" >
+                        <span ng-show="roundState == 'countdown'">Game starts in <strong>{{timer}}</strong>.</span>
+                        <span ng-show="roundState == 'playing'">Round ends in <strong>{{timer}}</strong>.</span>
+                    </div>
+                </div>
+                <!-- /Game State -->
+
+                <!-- Scores State -->
+                <div class="scores" ng-hide="roundState === 'playing' || state === 'join'">
+                    <div class="wait">
+                        Waiting for next round to begin.
+                    </div>
+                </div>
+                <!-- /Scores State -->
+
+            </div>
+        </div>
+
+        <script src="/js/vendor/jquery-1.10.2.js"></script>
+		<script src="/js/vendor/angular.js"></script>
+        <script src="https://cdn.socket.io/socket.io-1.0.4.js"></script>
+		<script src="/app/app.js"></script>
+        <script src="/app/controllers/playerController.js"></script>
+        <script src="/app/services/socketService.js"></script>
+    </body>
+</html>

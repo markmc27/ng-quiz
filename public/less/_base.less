@@ -1,0 +1,77 @@
+/* =================================
+   Base styles
+   ================================= */
+
+@-ms-viewport
+{
+  width: device-width;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #021b27;
+	color: @colorFont;
+    .font-size(16);
+    line-height: 1.6;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    color: @brandMain; 
+    &:hover,
+    &:focus {
+        color: @fontMainColor;
+    }
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: vertical;
+}
+
+h1, .alpha {
+    .font-size(36);
+}
+h2, .beta {
+    .font-size(30);
+}
+h3, .gamma {
+    .font-size(24);
+}
+h4, .delta {
+    .font-size(18);
+}
+h5, .epsilon {
+    .font-size(14);
+}
+h6, .zeta {
+    .font-size(14);
+}
+
+.content {
+    padding: 20px;
+}

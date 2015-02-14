@@ -1,0 +1,12 @@
+﻿.clearfix() {
+  zoom: 1;
+  &:before { content: ''; display: block; }
+  &:after { content: ''; display: table; clear: both; }
+}
+
+.font-size(@sizeValue) {
+  @remValue: (@sizeValue / 10);
+  @pxValue: @sizeValue;
+  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{remValue}rem";
+}

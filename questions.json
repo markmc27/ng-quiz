@@ -1,0 +1,36 @@
+{
+    "1": {"question": "Who had an encounter with the three bears?", "answers": ["Cinderella", "Goldilocks", "Snow White", "Little Red Riding Hood"], "correct": "Goldilocks"},
+    "2": {"question": "What was the name of Winne the Pooh's Donkey friend?", "answers": ["Piglet", "Eeyore", "Tigger", "Roo"], "correct": "Eeyore"},
+    "3": {"question": "Who was created by Gepetto the woodcarver?", "answers": ["Toodles", "Jiminy Cricket", "Pinocchio", "Paddington"], "correct": "Pinocchio"},
+    "4": {"question": "Who's the bear in The Jungle Book?", "answers": ["Baloo", "Rupert", "Yogi", "Bagheera"], "correct": "Baloo"},
+    "5": {"question": "What kind of creature was defeated by the Three Billy Goats Gruff?", "answers": ["Cyclops", "Dragon", "Robot", "Troll"], "correct": "Troll"},
+    "6": {"question": "Who painted the Mona Lisa?", "answers": ["Michael Angelo", "Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso"], "correct": "Leonardo da Vinci"},
+    "7": {"question": "In Charlie and the Chocolate Factory, what was Charlie's surname?", "answers": ["Bucket", "Gloop", "Teavee", "Salt"], "correct": "Bucket"},
+    "8": {"question": "What is the name of Peter Pan's piratical enemy?", "answers": ["Black Beard", "Jack Sparrow", "Smee", "Hook"], "correct": "Hook"},
+    "9": {"question": "What kind of animal is Beatrix Potter's Mrs Tiggy-Winkle?", "answers": ["Mouse", "Hedgehog", "Guinea Pig", "Hamster"], "correct": "Hedgehog"},
+    "10": {"question": "What is the name of Harry Potter's pet owl?", "answers": ["Crookshanks", "Nagini", "Fawkes", "Hedwig"], "correct": "Hedwig"},
+    "11": {"question": "Who was the son of Widow Twankey and brother of Wishee Washee?", "answers": ["Jack", "Aladdin", "Cinderella", "Dick Whittington"], "correct": "Aladdin"},
+    "12": {"question": "Sheriff Woody Pride and Buzz Lightyear are major characters in which series of films?", "answers": ["Cars", "Shrek", "Toy Story", "Monsters Inc."], "correct": "Toy Story"},
+    "13": {"question": "What sort of animal is Basil Brush?", "answers": ["Fox", "Badger", "Dog", "Squirrel"], "correct": "Fox"},
+    "14": {"question": "In which town do The Flinstones live?", "answers": ["Rubblerock", "Bikini Bottom", "Rocky Bed", "Bedrock"], "correct": "Bedrock"},
+    "15": {"question": "Which television programme shares its name with a naval flag?", "answers": ["Thunder Birds", "Blue Peter", "All at Sea", "Bluebirds"], "correct": "Blue Peter"},
+    "16": {"question": "How are Oritse, JB, Marvin and Aston known collectively?", "answers": ["One Direction", "Take That", "Boyzone", "JLS"], "correct": "JLS"},
+    "17": {"question": "Which breed of dogs were menaced by Cruella de Vil?", "answers": ["Dalmations", "Pugs", "Poodles", "Beagles"], "correct": "Dalmations"},
+    "18": {"question": "What is the name of the train in the Night Garden?", "answers": ["Iggle Piggle", "Makka Pakka", "Ninky Nonk", "Pinky Ponk"], "correct": "Ninky Nonk"},
+    "19": {"question": "What colour are Dandelions?", "answers": ["White", "Yellow", "Red", "Blue"], "correct": "Yellow"},
+    "20": {"question": "What are the young of frogs and toads called?", "answers": ["Pups", "Kitten", "Cub", "Tadpoles"], "correct": "Tadpoles"},
+    "21": {"question": "In computing, what is Mb short for?", "answers": ["MigaByte", "MichaelByte", "MegaByte", "MotorByte"], "correct": "MegaByte"},
+    "22": {"question": "The African and Asian are two types of which mammel?", "answers": ["Elephant", "Camel", "Cat", "Squirrel"], "correct": "Elephant"},
+    "23": {"question": "Cocker, Springer and King Charles are varieties of which breed of dog?", "answers": ["Poodle", "Pug", "Spaniel", "Terrier"], "correct": "Spaniel"},
+    "24": {"question": "Crawl, Backstroke and Butterfly are different methods in which sport?", "answers": ["Running", "Cycling", "Rowing", "Swimming"], "correct": "Swimming"},
+    "25": {"question": "Which sport takes place in a velodrome?", "answers": ["Rowing", "Cycling", "Curling", "Hockey"], "correct": "Cycling"},
+    "26": {"question": "What sort of anumal is the video game character Sonic?", "answers": ["Fish", "Hedgehog", "Crocodile", "Fox"], "correct": "Hedgehog"},
+    "27": {"question": "What is the capital city of Spain?", "answers": ["Barcelona", "Valencia", "Madird", "Seville"], "correct": "Madrid"},
+    "28": {"question": "Which Scottish loch is reputed to retain a monster?", "answers": ["Ness", "Lomond", "Morar", "Tay"], "correct": "Ness"},
+    "29": {"question": "Liverpool lies on which river?", "answers": ["Tyne", "Clyde", "Alt", "Mersey"], "correct": "Mersey"},
+    "30": {"question": "Who was caught red-handed trying to blow up parliment in 1605?", "answers": ["Old Guy", "Guy Fawkes", "Guy Peers", "Guy Spoons"], "correct": "Guy Fawkes"}
+}
+
+
+
+
